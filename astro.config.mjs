@@ -9,11 +9,14 @@ export default defineConfig({
       entrypoint: "astro/assets/services/noop",
     },
   },
+  site: "https://brett-tanner.dev",
   integrations: [
     starlight({
-      title: "",
+      title: "Brett Tanner's Portfolio",
       logo: {
-        src: "./src/assets/favicon.svg",
+        dark: "./src/assets/dark-favicon.svg",
+        light: "./src/assets/light-favicon.svg",
+        replacesTitle: true,
       },
       customCss: ["./src/tailwind.css"],
       social: {

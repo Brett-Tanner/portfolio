@@ -16,5 +16,13 @@
     "astro": "^3.0.6",
     "sharp": "^0.32.5",
     "tailwindcss": "^3.0.24"
+  },
+  "devDependencies": {
+    "bun-types": "latest",
+    "eslint-plugin-mdx": "^2.2.0"
+  },
+  "module": "index.ts",
+  "peerDependencies": {
+    "typescript": "^5.0.0"
   }
 }
