@@ -18,7 +18,7 @@ export default defineConfig({
         light: "./src/assets/light-favicon.svg",
         replacesTitle: true,
       },
-      favicon: "./public/favicon.svg",
+      favicon: "/public/favicon.svg",
       description: "Web dev portfolio for Brett Tanner",
       customCss: ["./src/tailwind.css"],
       social: {
@@ -30,13 +30,13 @@ export default defineConfig({
         {
           label: "Javascript",
           autogenerate: {
-            directory: "javascript",
+            directory: "wiki/javascript",
           },
         },
         {
           label: "Reference",
           autogenerate: {
-            directory: "reference",
+            directory: "wiki/reference",
           },
         },
       ],

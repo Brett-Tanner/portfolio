@@ -1,0 +1,21 @@
+---
+import { getEntry } from "astro:content"
+
+const project = await getEntry('projects', "kuRegistrations")
+---
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Project Index</title>
+</head>
+<body>
+    Test Project Index
+    <h1>{project.id}</h1>
+    <h2>{project.collection}</h2>
+    <h3>{project.data.title}</h3>
+</body>
+</html>
