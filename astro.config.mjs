@@ -18,9 +18,13 @@ export default defineConfig({
         light: "./src/assets/light-favicon.svg",
         replacesTitle: true,
       },
+      favicon: "./public/favicon.svg",
+      description: "Web dev portfolio for Brett Tanner",
       customCss: ["./src/tailwind.css"],
       social: {
-        github: "https://github.com/withastro/starlight",
+        github: "https://github.com/Brett-Tanner",
+        linkedin: "https://www.linkedin.com/in/brett-tanner-53174711b/",
+        discord: "http://discordapp.com/users/213138871527931905",
       },
       sidebar: [
         {
