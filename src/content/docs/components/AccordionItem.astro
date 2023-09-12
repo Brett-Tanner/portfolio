@@ -1,0 +1,24 @@
+---
+// TODO: will need an icon prop too
+const { title, level, experience } = Astro.props
+let levelClasses: any[] = ["p-1 rounded font-bold text-neutral-100 text-xs"]
+switch (level) {
+    case "Confident":
+        levelClasses.push(["text-neutral-100", "bg-green-500"])
+        break;
+    case "Experienced":
+        levelClasses.push(["text-gray-900", "bg-sky-500"])
+        break;
+    case "Learning":
+        levelClasses.push(["text-neutral-100", "bg-yellow-500"])
+        break;
+}
+---
+
+<details>
+    <summary class="flex bg-slate-100 dark:bg-gray-800 rounded-md p-2">
+        <p class="grow text-base">{title}</p>
+        <p style="margin-top: 0;" class:list={levelClasses}>{level}</p>
+    </summary>
+    {experience}
+</details>
